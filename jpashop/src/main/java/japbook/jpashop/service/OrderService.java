@@ -57,7 +57,7 @@ public class OrderService {
     }
 
     // search
-//    public List<Order> findALl(OrderSearch orderSearch) {
-//        em.create
-//    }
+    public List<Order> findOrders(OrderSearch orderSearch) {
+        return orderRepository.findAllByCriteria(orderSearch);
+    }
 }
